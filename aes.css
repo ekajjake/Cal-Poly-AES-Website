@@ -1,0 +1,99 @@
+/********** GLOBAL **********/
+body{
+    background: #FAFAFA;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+/********** HEADER / NAV MENU **********/
+#navbar {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 12px;
+    text-align: center;
+    background-color: #000000;
+    padding: 12px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#navbar a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#logo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    width: 30%;
+    text-align: center;
+}
+
+paper-tabs{
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+paper-tabs::shadow #selectionBar {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+paper-tabs paper-tab::shadow #ink {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/********** CONTENT **********/
+#content {
+    float: left;
+    width: 66%;
+}
+
+#sidebar {
+    float: left;
+    width: 33%;
+}
+
+.errorbox {
+    display: none;
+}
+
+.card{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    background-color: #FFFFFF;
+    color: rgba(0, 0, 0, 0.54);
+    border-radius: 2px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.card a{
+    color: inherit;
+}
+
+.name{
+    font-weight: bold;
+}
+
+#calendar{
+    height: 50vh;
+}
+
+/********** FOOTER **********/
+#footer{
+    margin-top: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: .8em;
+    text-align: center;
+    width: 80%;
+}

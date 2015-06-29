@@ -1,0 +1,29 @@
+<title> Cal Poly AES </title>
+<link rel="stylesheet" type="text/css" href="aes.css">
+<link rel="shortcut icon" href="img/aes.png">
+<link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+<link rel="import" href="https://www.polymer-project.org/1.0/components/paper-ripple/paper-ripple.html">
+<link rel="import" href="https://www.polymer-project.org/1.0/components/paper-tabs/paper-tabs.html">
+<script type="text/javascript">
+    function loadPage(page)
+    {
+        var currentPage = window.location.href.split('/').pop();
+        if (currentPage === '' && page === 'home') {
+            return;
+        }
+        else if (currentPage !== '' && page === 'home') {
+            window.location.href = "http://localhost:8000";
+        }
+        else {
+            $('#content').load(page);
+        }
+    }
+</script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=156158537763617";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>

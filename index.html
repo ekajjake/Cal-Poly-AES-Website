@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">
+    $('head').append($("<div id=\"container\">").load("header.html"));
+    </script>
+</head>
+<body>
+    <div id="navbar">
+        <script type="text/javascript">
+        $('#navbar').load('navbar.html');
+        </script>
+    </div>
+    <div id="content">
+        <div class="card">
+            Home wahoo!
+        </div>
+    </div>
+    <div id="sidebar">
+        <div class="card">
+            Weee!
+        </div>
+    </div>
+    <div id="footer">
+    <script type="text/javascript">
+    $('#footer').load('footer.html');
+    </script>
+    </div>
+</body>
+</html>
