@@ -1,5 +1,4 @@
-before_install:
-    "sudo apt-get install sshpass"
-after_success:
-    "rm .git"
-    "sshpass -p $FTP_PASSWORD rsync -arvce 'ssh -o StrictHostKeyChecking=no' ./ $FTP_USER@calpolyaes.com:$FTP_LOCATION"
+script:
+    - sudo apt-get install sshpass
+    - rm .git
+    - sshpass -p $FTP_PASSWORD rsync -arvce 'ssh -o StrictHostKeyChecking=no' ./ $FTP_USER@calpolyaes.com:$FTP_LOCATION
