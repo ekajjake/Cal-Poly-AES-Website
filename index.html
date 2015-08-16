@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script type="text/javascript">
     $('head').append($("<div id=\"container\">").load("header.html"));
     </script>
 </head>
 <body>
-    <div id="navbar">
-        <script type="text/javascript">
-        $('#navbar').load('navbar.html');
-        </script>
+    <div id="push">
     </div>
+    <div id="header">
+        <div id="logo_container">
+            <script type="text/javascript">
+            $('#logo_container').load('logo_container.html');
+            </script>
+        </div>
+        <div id="navbar">
+            <script type="text/javascript">
+            $('#navbar').load('navbar.html');
+            </script>
+        </div>
+    </div>
+    <div id="loadingDiv"><paper-spinner active></paper-spinner></div>
     <div id="content">
-        <div class="card">
-            Home wahoo!
-        </div>
-    </div>
-    <div id="sidebar">
-        <div class="card">
-            Weee!
-        </div>
     </div>
     <div id="footer">
     <script type="text/javascript">
@@ -28,4 +31,3 @@
     </script>
     </div>
 </body>
-</html>

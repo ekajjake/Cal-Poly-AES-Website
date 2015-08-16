@@ -1,3 +1,11 @@
+/********** LOADING **********/
+#loadingDiv {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px;
+    text-align: center;
+}
+
 /********** GLOBAL **********/
 body{
     background: #FAFAFA;
@@ -6,15 +14,41 @@ body{
     padding: 0px;
 }
 
+a {
+	word-wrap: break-word;
+}
+
+table {
+    width: 100%;
+    border-spacing: 8px;
+}
+
+tr {
+    border-spacing: 0px;
+}
+
+td {
+    width: 50%;
+}
+
 /********** HEADER / NAV MENU **********/
-#navbar {
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 12px;
-    text-align: center;
+#push {
+     height: 168px;
+     margin-bottom: 16px;
+}
+#header {
+    box-shadow: 0 0 6px rgba(0,0,0,.16),0 6px 12px rgba(0,0,0,.32);
     background-color: #000000;
-    padding: 12px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+#navbar {
+    margin: 0px;
+    text-align: center;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 #navbar a{
@@ -24,15 +58,25 @@ body{
 }
 
 #logo {
+    padding-top: 16px;
+    height: 100px;
+}
+
+#logo_container {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 12px;
-    margin-top: 12px;
-    width: 30%;
+    margin-bottom: 0px;
+    margin-top: 0px;
     text-align: center;
 }
 
+paper-tab a{
+    text-align: center;
+    font-size: 11x;
+}
+
 paper-tabs{
+    margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
     width: 75%;
@@ -47,33 +91,30 @@ paper-tabs paper-tab::shadow #ink {
 }
 
 /********** CONTENT **********/
-#content {
-    float: left;
-    width: 66%;
-}
-
-#sidebar {
-    float: left;
-    width: 33%;
-}
-
-.errorbox {
-    display: none;
-}
-
-.card{
+.hcenter {
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
-    height: 100%;
+}
+.card{
+    margin-left: 8px;
+    margin-right: 8px;
     padding: 12px;
-    margin-top: 12px;
-    margin-bottom: 12px;
+    margin-top: 8px;
+    margin-bottom: 8px;
     background-color: #FFFFFF;
     color: rgba(0, 0, 0, 0.54);
     border-radius: 2px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 6px rgba(0,0,0,.16),0 6px 12px rgba(0,0,0,.32);
 
+}
+.transparent{
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.no-margin {
+    margin: 0;
 }
 
 .card a{
@@ -84,8 +125,11 @@ paper-tabs paper-tab::shadow #ink {
     font-weight: bold;
 }
 
-#calendar{
-    height: 50vh;
+/********** LANDING **********/
+.fragment-title {
+    color: #999;
+    padding-left: 8px;
+    padding-bottom: 8px;
 }
 
 /********** FOOTER **********/
@@ -93,7 +137,38 @@ paper-tabs paper-tab::shadow #ink {
     margin-top: 12px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 12px;
+    padding-left: 12px;
     font-size: .8em;
     text-align: center;
-    width: 80%;
+    width: 100%;
+}
+
+/********** MOBILE **********/
+@media only screen and (max-device-width: 480px) {
+    paper-tab {
+        font-size: 11px;
+    }
+    paper-tabs {
+        width: 100%;
+    }
+
+    #navbar {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .hcenter {
+        width: auto;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    #logo {
+        height: 75px;
+    }
+
+    #push {
+        height: 143px;
+    }
 }

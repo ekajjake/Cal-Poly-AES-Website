@@ -1,38 +1,22 @@
-<div id="logo">
-    <img src="img/aes.png" alt="Cal Poly AES"
-         title="Cal Poly AES" width="40%"></img>
-</div>
-<div id="nav-menu">
-    <paper-tabs selected=0>
-      <paper-tab link>
-          <a horizontal center-center layout onclick="loadPage('home')">
-              HOME
-          </a>
-      </paper-tab>
-      <paper-tab link>
-          <a href="#calendar" horizontal center-center layout onclick="loadPage('calendar.html')">
-              CALENDAR
-          </a>
-      </paper-tab>
-      <paper-tab link>
-          <a href="#projects" horizontal center-center layout onclick="loadPage('projects.html')">
-              PROJECTS
-          </a>
-      </paper-tab>
-      <paper-tab link>
-          <a href="#wiki" horizontal center-center layout onclick="loadPage('wiki.html')">
-              WIKI
-          </a>
-      </paper-tab>
-      <paper-tab link>
-          <a href="#collab" horizontal center-center layout onclick="loadPage('collab.html')">
-              COLLABORATION
-          </a>
-      </paper-tab>
-      <paper-tab link>
-          <a href="#directory" horizontal center-center layout onclick="loadPage('directory.html')">
-              DIRECTORY
-          </a>
-      </paper-tab>
-    </paper-tabs>
-</div>
+<paper-tabs id="tabs" selected=0>
+  <paper-tab link id="products_button" onclick="loadPage('calendar.html', '0')">
+      <a href="#calendar" horizontal center-center layout>
+          CALENDAR
+      </a>
+  </paper-tab>
+  <paper-tab link id="press_button" onclick="loadPage('wiki.html', '1')">
+      <a href="http://calpolyaes.com/wiki/" horizontal center-center layout>
+          WIKI
+      </a>
+  </paper-tab>
+  <paper-tab link id="devblog_button" onclick="loadPage('collab.html', '2')">
+      <a href="#collab" horizontal center-center layout>
+          COLLAB
+      </a>
+  </paper-tab>
+  <paper-tab link id="contact_button" onclick="loadPage('about.html', '3')">
+      <a href="#about" horizontal center-center layout>
+          ABOUT
+      </a>
+  </paper-tab>
+</paper-tabs>
