@@ -1,4 +1,5 @@
 script:
     - sudo apt-get install sshpass
-    - rm .git
+    - rm -rf .git
+    - rm .travis.yml
     - sshpass -p $FTP_PASSWORD rsync -arvce 'ssh -o StrictHostKeyChecking=no' ./ $FTP_USER@calpolyaes.com:$FTP_LOCATION
