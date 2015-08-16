@@ -1,6 +1,3 @@
-branches:
-    only:
-        - master
 before_install:
     "sudo apt-get install sshpass"
 after_success:
